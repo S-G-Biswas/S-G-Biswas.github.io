@@ -47,8 +47,8 @@ function showSkills(skills) {
         skillHTML += `
         <div class="bar">
               <div class="skills-card">
-                <img src=${skill.icon} alt="skill" />
-                <span>${skill.name}</span>
+                <img src=${skill.icon} alt="skill" class="skills-card-img" />
+                <span class="skills-card-name">${skill.name}</span>
               </div>
             </div>`
     });
