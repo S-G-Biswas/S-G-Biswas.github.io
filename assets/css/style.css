@@ -323,10 +323,14 @@ header .navbar ul li a:hover {
     margin-top: 12rem;
   }
   .home .image img {
-    margin-top: -12rem;
+    /* margin-top: -12rem; */
+    display: none;
   }
   .home .content p {
     font-size: 2.2rem;
+  }
+  .home .content h2 {
+    margin-top: 30px;
   }
   .home .content p span {
     font-size: 2.2rem;
@@ -634,12 +638,13 @@ header .navbar ul li a:hover {
 .projects{
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2.5rem;
   margin: 2rem;
 }
 .project-card{
   width: 500px;
   border: 1px solid white;
+  border-radius: 5px;
 }
 .projects p {
   color: #fff;
@@ -653,6 +658,27 @@ header .navbar ul li a:hover {
   border-bottom: 1px solid white;
 }
 
+/* Project media query */
+
+@media screen and (max-width: 600px) {
+   .projects{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+   }
+   .project-card{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+   .project-card .proj-image img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid white;
+  }
+}
 
 
 
@@ -669,7 +695,7 @@ header .navbar ul li a:hover {
 .work .heading span {
   color: rgb(255, 230, 0);
 }
-.work .box-container {
+/* .work .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -774,7 +800,7 @@ header .navbar ul li a:hover {
 }
 .work .viewall .btn:hover i {
   transform: translateX(5px);
-}
+} */
 /* work section ends */
 
 /* experience section starts */
