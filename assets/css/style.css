@@ -631,6 +631,33 @@ header .navbar ul li a:hover {
 /* education section ends */
 
 /* projects section starts */
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+.project-card{
+  width: 500px;
+  border: 1px solid white;
+}
+.projects p {
+  color: #fff;
+  padding: 1rem;
+}
+
+.project-card .proj-image img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid white;
+}
+
+
+
+
+
+/* /////////// */
 .work {
   /* background: #010124; */
   background: linear-gradient(to bottom, #000031, #00002c);
