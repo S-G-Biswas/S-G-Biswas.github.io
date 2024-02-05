@@ -657,7 +657,16 @@ header .navbar ul li a:hover {
   object-fit: cover;
   border-bottom: 1px solid white;
 }
-
+.project-github-link{
+  color: yellow;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.project-deployed-link{
+  color: yellow;
+  margin-left: 20px;
+  font-size: 15px;
+}
 /* Project media query */
 
 @media screen and (max-width: 600px) {
@@ -672,6 +681,7 @@ header .navbar ul li a:hover {
     border: 1px solid white;
     border-radius: 5px;
   }
+
    .project-card .proj-image img {
     height: 50%;
     width: 100%;
