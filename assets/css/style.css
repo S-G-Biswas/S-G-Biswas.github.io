@@ -17,7 +17,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #f7f7f7;
+  /* background: #f7f7f7; */
+  background: #f2f2f2;
   font-family: "Poppins", sans-serif;
 }
 
@@ -106,12 +107,12 @@ header .navbar ul li a {
   letter-spacing: 0.04rem;
   transition: 0.2s;
 }
-header .navbar ul li a.active,
+ 
 header .navbar ul li a:hover {
   color: #011aff;
   border-bottom: 0.2rem solid #011aff;
   padding: 0.5rem 0;
-}
+} 
 /* navbar ends */
 
 /* hamburger icon starts*/
@@ -203,15 +204,15 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image img {
-  width: 70%;
+  width: 90%;
   margin-left: 6rem;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  /* border-radius: 50%; */
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); */
   cursor: pointer;
 }
-.home .image img:hover {
+/* .home .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
+} */
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
@@ -259,9 +260,7 @@ header .navbar ul li a:hover {
 .home .btn:hover {
   background: #1a047e;
 }
-.home .btn:hover i {
-  transform: translateX(5px);
-}
+
 /* social icons start */
 .socials {
   position: relative;
@@ -426,9 +425,7 @@ header .navbar ul li a:hover {
 .resumebtn .btn:hover {
   background: #1a047e;
 }
-.resumebtn .btn:hover i {
-  transform: translateX(5px);
-}
+
 /* about media queries starts*/
 @media screen and (max-width: 600px) {
   .about .row .image {
@@ -456,7 +453,9 @@ header .navbar ul li a:hover {
 /* skills section starts */
 #skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  /* background: linear-gradient(to bottom, #57059e, #4a00e0); */
+  /* background: #6e71cc; */
+  background: linear-gradient(to top, #000031, #000031);
 }
 #skills h2 {
   color: #fff;
@@ -664,7 +663,7 @@ header .navbar ul li a:hover {
 }
 .project-deployed-link{
   color: yellow;
-  margin-left: 20px;
+  margin-left: 7px;
   font-size: 15px;
 }
 /* Project media query */
@@ -695,8 +694,8 @@ header .navbar ul li a:hover {
 
 /* /////////// */
 .work {
-  /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  /* background: #434ccc; */
+  background: linear-gradient(to top, #000031, #7575c7);
 }
 .work h2 {
   color: #fff;
@@ -939,9 +938,7 @@ header .navbar ul li a:hover {
 .morebtn .btn:hover {
   background: #1a047e;
 }
-.morebtn .btn:hover i {
-  transform: translateX(5px);
-}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
