@@ -421,6 +421,7 @@ header .navbar ul li a:hover {
   margin-left: 0.3rem;
   font-size: 1.2rem;
   transition: 0.3s;
+  
 }
 .resumebtn .btn:hover {
   background: #1a047e;
@@ -527,6 +528,10 @@ header .navbar ul li a:hover {
 /* skills section ends */
 
 /* education section starts */
+.first{
+  height: 140px;
+}
+
 .education {
   background: #e5ecfb;
   min-height: 80vh;
@@ -704,6 +709,7 @@ header .navbar ul li a:hover {
 .work .heading span {
   color: rgb(255, 230, 0);
 }
+
 /* .work .box-container {
   display: flex;
   flex-wrap: wrap;
