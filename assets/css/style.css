@@ -1001,12 +1001,19 @@ header .navbar ul li a:hover {
   /* background-color: #007bb6; */
   margin-right: 100px;
 }
-.contact_section h1{
+.contact_section hr{
   color: rgb(115, 3, 167);
 }
-.connect h2{
+.contact_section h1{
+  color: rgb(115, 3, 167);
+  margin-bottom: 20px;
+}
+.connect span{
   margin-top: 10px;
   color: #ff7b00;
+}
+.connect h1{
+  color: rgb(115, 3, 167);
 }
 
 
