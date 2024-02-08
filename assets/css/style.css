@@ -290,6 +290,9 @@ header .navbar ul li a:hover {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+.social-icons a.twitter{
+   margin-top: 10px;
+}
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
@@ -609,6 +612,10 @@ header .navbar ul li a:hover {
 
 /* education media queries starts*/
 @media screen and (max-width: 600px) {
+  .first{
+    height: auto;
+    width: 100%;
+  }
   .education .box-container .box {
     flex-direction: column;
     width: 100%;
@@ -988,6 +995,39 @@ header .navbar ul li a:hover {
 /* experience section ends */
 
 /* contact section starts */
+
+.contact_section{
+  margin-top: -20px;
+  /* background-color: #007bb6; */
+  margin-right: 100px;
+}
+.contact_section h1{
+  color: rgb(115, 3, 167);
+}
+.connect h2{
+  margin-top: 10px;
+  color: #ff7b00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contact {
   background: #e5ecfb;
   min-height: 60vh;
