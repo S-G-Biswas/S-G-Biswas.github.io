@@ -1044,8 +1044,8 @@ header .navbar ul li a:hover {
   margin-top: 10px;
   color: #ff7b00;
 }
-.connect h1{
-  color: rgb(115, 3, 167);
+.connect a{
+  color: #0000ee;
 }
 
 
