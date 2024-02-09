@@ -338,6 +338,11 @@ header .navbar ul li a:hover {
     font-size: 2.2rem;
   }
 }
+@media(max-width:1000px)  {
+  .home .content h2 {
+    margin-top: 30px;
+  }
+}
 /* hero media queries ends*/
 /* hero section end */
 
@@ -511,7 +516,7 @@ header .navbar ul li a:hover {
   margin-left: 0.5rem;
 }
 /* skills media queries starts*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   #skills .container {
     padding: 0;
     margin: 0;
@@ -527,6 +532,22 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 }
+/* @media screen and (min-width: 600px) {
+  #skills .container {
+    padding: 0;
+    margin: 0;
+  }
+  #skills .container .row {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+  #skills .container {
+    margin-top: 5px;
+    width: 100%;
+  }
+} */
 /* skills media queries ends*/
 /* skills section ends */
 
@@ -647,13 +668,16 @@ header .navbar ul li a:hover {
 
 /* projects section starts */
 .projects{
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 2.5rem; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
   margin: 2rem;
 }
 .project-card{
-  width: 500px;
+  /* width: 500px; */
   border: 1px solid white;
   border-radius: 5px;
 }
@@ -682,8 +706,10 @@ header .navbar ul li a:hover {
 
 @media screen and (max-width: 600px) {
    .projects{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
     margin: 0;
     padding: 0;
    }
@@ -701,7 +727,13 @@ header .navbar ul li a:hover {
   }
 }
 
-
+@media screen and (max-width: 400px) {
+  .projects{
+    grid-template-columns: repeat(1,1fr);
+    gap: 5px;
+    
+   }
+}
 
 
 /* /////////// */
