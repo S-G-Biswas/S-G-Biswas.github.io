@@ -672,7 +672,7 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
   gap: 2.5rem; */
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
   gap: 10px;
   margin: 2rem;
 }
@@ -708,7 +708,7 @@ header .navbar ul li a:hover {
    .projects{
     /* display: flex;
     flex-direction: column; */
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     gap: 5px;
     margin: 0;
     padding: 0;
