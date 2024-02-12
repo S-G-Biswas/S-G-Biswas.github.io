@@ -120,5 +120,39 @@ srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
 
 
+//dowload pdf
+
+// Define the URL of the PDF file
+var pdfUrl = "../images/SHYAMGOPAL-BISWAS-Resume.pdf";
+
+// Function to trigger the download
+function downloadPdf() {
+  fetch(pdfUrl)
+    .then(response => response.blob())
+    .then(blob => {
+      // Create a blob URL for the PDF data
+      var url = window.URL.createObjectURL(blob);
+
+      // Create a link element to trigger the download
+    //   var a = document.createElement("a");
+    //   a.href = url;
+    //   a.download = "SHYAMGOPAL-BISWAS-Resume.pdf"; // Set the desired file name
+    //   document.body.appendChild(a);
+
+      // Trigger a click event on the link element to initiate the download
+    //   a.click();
+
+      // Clean up by revoking the blob URL and removing the link element
+      window.URL.revokeObjectURL(url);
+    //   document.body.removeChild(a);
+    })
+    .catch(error => {
+      console.error("Failed to download the PDF file: ", error);
+    });
+}
+
+// Call the downloadPdf() function when needed, e.g., in response to a button click
+// document.getElementById("downloadButton").addEventListener("click", downloadPdf);
+
 
 

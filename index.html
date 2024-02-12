@@ -29,7 +29,7 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a  href="#contact">Contact</a></li>
-            <li><a  id="resume-button-1" href="./assets/images/SHYAMGOPAL-BISWAS-Resume.pdf" download >Resume</a></li>
+            <li><a  id="resume-button-1" onclick="downloadResume()" >Resume</a></li>
             </ul>
         </nav>
 </header>
@@ -89,12 +89,10 @@
         </div>
         
         <div class="resumebtn">
-            <a  href="./assets/images/SHYAMGOPAL-BISWAS-Resume.pdf" download class="btn" id="resume-button-2"><span>Resume</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
-            
+          <button onclick="downloadResume()" class="btn"><span>Resume</span><i class="fas fa-chevron-right"></i></button>
         </div>
-
+        
+        
     </div>
     </div>
 </section>
@@ -222,20 +220,19 @@
 
 <!-- Github section start -->
 
-<!-- <section >
-  <div class="react-activity-calendar">
-      
+<section class="github" >
+  <div class="github_Heading">
+    <h1 class="heading"> Github <span>Stats</span></h1>
   </div>
-  <div id="github-streak-stats">
-    <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=S-G-Biswas" alt="GitHub Streak" /></a>
-  </div>
-  <div id="github-top-langs">
-   <img src="assets/images/top_lang.png" alt="">
-  </div>
-  <div id="github-stats-card">
+  <br>
+  <div id="github-stats-card" class="calender">
     <img src="assets/images/github_calender.png" alt="">
   </div>
-</section> -->
+  <div id="github-streak-stats" class="Streak">
+    <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=S-G-Biswas" alt="GitHub Streak" /><img src="assets/images/top_lang.png" alt="" class="topLanguage"></a>
+  </div>
+  
+</section>
 
 <!-- Github section End -->
 
@@ -253,31 +250,7 @@
       <div class="image-box">
         <img draggable="false" src="./assets/images/contact1.png" alt="">
       </div>
-    <!-- <form id="contact-form"> -->
-      
-      <!-- <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div> -->
-      <!-- <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div> -->
-    <!-- </form> -->
+    
     <div class="contact_section">
       <h1>Connect with me :- </h1>
       <br>
@@ -362,6 +335,16 @@
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./assets/js/script.js"></script>
+<script>
+  function downloadResume() {
+      var resumeUrl = './assets/images/SHYAMGOPAL-BISWAS-Resume.pdf';
+      window.open(resumeUrl, '_blank');
+      var link = document.createElement('a');
+      link.href = resumeUrl;
+      link.download = 'Shyamgopal-Biswas-Resume.pdf';
+      link.click();
+  }
+</script>
 
 </body>
 </html>

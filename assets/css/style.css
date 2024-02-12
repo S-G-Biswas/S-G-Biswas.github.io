@@ -1026,6 +1026,60 @@ header .navbar ul li a:hover {
 /* experience media queries ends */
 /* experience section ends */
 
+
+
+
+
+/* Github section */
+.calender{
+  margin-left: 100px;
+}
+.Streak{
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.topLanguage{
+  margin-left: 20px;
+  height: 195px;
+  width: 330px;
+}
+.github{
+  background-color: #e5feff;
+}
+@media (max-width: 1000px){
+  .github{
+    display: none;
+  }
+}
+
+@media (max-width: 480px){
+  .calender{
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  .Streak{
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  .topLanguage{
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  .github{
+    display: none;
+  }
+}
+
+
+
+
+
+
+/* end */
+
 /* contact section starts */
 
 .contact_section{
